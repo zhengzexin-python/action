@@ -7,11 +7,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ProductComponent implements OnInit {
   public products: Array<Product>;
-
+  public imgurl: string;
   constructor() {
   }
 
   ngOnInit() {
+    this.imgurl = 'http://via.placeholder.com/320x150';
     this.products = [
       new Product(1, '希捷2T移动硬盘', 645, 3.5, '这是一个2T的移动硬盘，3.0接口', ['电子产品']),
       new Product(2, 'spring in action', 89, 4.5, '这是一本关于spring框架的书籍', ['图书', 'java']),
